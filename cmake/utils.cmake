@@ -1,5 +1,9 @@
 ###################################################################################
 # Knavels Cmake Utils
+# USAGE: add the following to the cmakelists.txt
+# file(DOWNLOAD "https://raw.githubusercontent.com/knavels/reusable_files/main/cmake/utils.cmake"
+#        "${CMAKE_CURRENT_BINARY_DIR}/utils.cmake")
+# include(${CMAKE_CURRENT_BINARY_DIR}/utils.cmake)
 ###################################################################################
 
 Include(FetchContent)
