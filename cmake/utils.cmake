@@ -59,6 +59,6 @@ function(generate_version)
 endfunction()
 
 function(set_and_generate_version major minor patch phase)
-    set_version(major minor patch phase)
+    set_version(${major} ${minor} ${patch} ${phase})
     generate_version()
 endfunction()
