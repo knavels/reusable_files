@@ -44,7 +44,7 @@ function(set_version major minor patch phase)
     SET(MINOR ${minor} PARENT_SCOPE)
     SET(PATCH ${patch} PARENT_SCOPE)
     SET(PHASE ${phase} PARENT_SCOPE)
-    string(TIMESTAMP TIMESTAMP "%Y.%m.%d.%H.%M")
+    string(TIMESTAMP TIMESTAMP "%Y%m%d.%H%M")
 
     SET(BUILD ${TIMESTAMP} PARENT_SCOPE)
 
