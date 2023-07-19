@@ -38,3 +38,11 @@ function(add_prebuild_test target test_target)
     # Specify the dependency and command to run the tests
     add_dependencies(${target} ${test_target})
 endfunction()
+
+function(set_version major minor patch phase build)
+    SET(MAJOR ${major})
+    SET(MINOR ${minor})
+    SET(PATCH ${patch})
+    SET(PHASE ${phase})
+    SET(BUILD ${build})
+endfunction()
