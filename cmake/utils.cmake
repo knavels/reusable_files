@@ -48,5 +48,5 @@ function(set_version major minor patch phase)
 
     SET(BUILD ${TIMESTAMP} PARENT_SCOPE)
 
-    message("Version: ${MAJOR}.${MINOR}.${PATCH}-${PHASE}${BUILD}")
+    message("Version: ${major}.${minor}.${patch}-${phase}+${TIMESTAMP}")
 endfunction()
