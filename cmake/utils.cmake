@@ -39,10 +39,14 @@ function(add_prebuild_test target test_target)
     add_dependencies(${target} ${test_target})
 endfunction()
 
-function(set_version major minor patch phase build)
+function(set_version major minor patch phase)
     SET(MAJOR ${major} PARENT_SCOPE)
     SET(MINOR ${minor} PARENT_SCOPE)
     SET(PATCH ${patch} PARENT_SCOPE)
     SET(PHASE ${phase} PARENT_SCOPE)
-    SET(BUILD ${build} PARENT_SCOPE)
+    string(TIMESTAMP TIMESTAMP "%Y%m%d%H%M")
+
+    SET(BUILD ${TIMESTAMP} PARENT_SCOPE)
+
+    message("Version: ${MAJOR}.${MINOR}.${PATCH}-${PHASE}${BUILD}")
 endfunction()
