@@ -57,3 +57,8 @@ function(generate_version)
 
     configure_file("${CMAKE_CURRENT_BINARY_DIR}/VERSION.in" "${CMAKE_SOURCE_DIR}/VERSION" ESCAPE_QUOTES)
 endfunction()
+
+function(set_and_generate_version major minor patch phase)
+    set_version(major minor patch phase)
+    generate_version()
+endfunction()
