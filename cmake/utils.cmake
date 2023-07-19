@@ -50,3 +50,10 @@ function(set_version major minor patch phase)
 
     message("Version: ${major}.${minor}.${patch}-${phase}+${TIMESTAMP}")
 endfunction()
+
+function(generate_version)
+    file(DOWNLOAD "https://raw.githubusercontent.com/knavels/reusable_files/main/cmake/templates/VERSION.in"
+        "${CMAKE_CURRENT_BINARY_DIR}/VERSION.in")
+
+    configure_file("${CMAKE_CURRENT_BINARY_DIR}/VERSION.in" "${CMAKE_SOURCE_DIR}/VERSION" ESCAPE_QUOTES)
+endfunction()
