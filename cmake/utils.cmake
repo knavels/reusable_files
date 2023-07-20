@@ -39,7 +39,7 @@ function(add_prebuild_test target test_target)
     add_dependencies(${target} ${test_target})
 endfunction()
 
-function(set_version major minor patch build_number)
+function(set_version major minor patch phase build_number)
     SET(MAJOR ${major} PARENT_SCOPE)
     SET(MINOR ${minor} PARENT_SCOPE)
     SET(PATCH ${patch} PARENT_SCOPE)
