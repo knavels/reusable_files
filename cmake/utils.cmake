@@ -20,7 +20,7 @@ endfunction()
 add_lib_from_git(
         Catch2
         https://github.com/catchorg/Catch2.git
-        v3.3.2
+        v3.4.0
 )
 
 set(CATCH2_MAIN Catch2::Catch2WithMain)
