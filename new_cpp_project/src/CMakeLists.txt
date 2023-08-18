@@ -19,8 +19,11 @@ file(GLOB SOURCES
         main.cpp
 )
 
-add_library(${PROJECT_NAME}
-        STATIC
+# add_library(${PROJECT_NAME}
+#         STATIC
+#         ${SOURCES}
+#         )
+add_executable(${PROJECT_NAME}
         ${SOURCES}
         )
 target_include_directories(${PROJECT_NAME} PUBLIC "./include")
