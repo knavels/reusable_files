@@ -11,4 +11,4 @@ include(${CMAKE_CURRENT_BINARY_DIR}/utils.cmake)
 add_subdirectory(tests)
 add_subdirectory(src)
 
-set_and_generate_version(0 9 8 dev 1)
+set_and_generate_version(0 0 1 dev 1)
