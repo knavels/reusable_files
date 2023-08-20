@@ -30,3 +30,5 @@ target_include_directories(${PROJECT_NAME} PUBLIC "./include")
 
 # target_link_libraries(${PROJECT_NAME} PUBLIC asls)
 # target_link_libraries(${PROJECT_NAME} PUBLIC utf8_tools)
+
+# add_prebuild_test(${PROJECT_NAME} tests)
