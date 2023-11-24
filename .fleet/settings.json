@@ -20,5 +20,7 @@
             "type": "add",
             "pluginName": "fleet.git.frontend"
         }
-    ]
+    ],
+    "editor.guides": [],
+    "editor.formatOnSave": true,
 }
